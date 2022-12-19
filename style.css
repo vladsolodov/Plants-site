@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+.nav {
+  background-color: #0C4B35;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+.nav {
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-2 {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-2 {
+  background-color: #FFFFFF;
+  height: 70px;
+}
+
+.contacts {
+  display: flex;
+  gap: 20px;
+}
+
+.select-language a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-2-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.img-block-1 {
+  height: 240px;
+  background-color: grey;
+}
+
+.information {
+  padding-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
+}
+
+.icon-tree {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  gap: 5px;
+}
+
+.title-information {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 38px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.title-information span {
+  color: #00730C;
+}
+
+.information-description {
+  line-height: 22px;
+  font-size: 14px;
+  font-weight: 400px;
+}
+
+.call-to-action-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.information button {
+  width: 303px;
+  height: 44px;
+  border: 0px solid;
+  border-radius: 5px;
+  background-color: #00730C;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.information-how-it-works {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.1px;
+}
+
+.information-how-it-works a {
+  text-decoration: none;
+  color: #00730C;
+}
+
+.reviews {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 40px;
+}
+
+.image-flowerpot {
+  position: absolute;
+  right: 290px;
+  top: -66px;
+}
+
+.happy-customers-sticker {
+  width: 133px;
+  height: 32px;
+  background: linear-gradient(180deg, #FFF8F1 0%, #CBE5CE 100%);
+  border: 0px;
+  border-radius: 32px;
+  font-size: 10px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+
+.happy-customers-sticker span {
+  font-weight: 700;
+  font-size: 12px;
+}/*# sourceMappingURL=style.css.map */
