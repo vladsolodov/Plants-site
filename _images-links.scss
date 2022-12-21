@@ -1,0 +1,37 @@
+.grass-cutting-img{
+    background-image: url("icons/Grass\ Cuttin.svg");
+}
+
+.tree-planting-img{
+    background-image: url("icons/Tree\ Planting\ green.svg");
+}
+
+@media (min-width: 1024px) {
+    .tree-planting-img{
+    background-image: url("icons/Tree\ Planting\ white.svg");
+    }
+}
+
+.garden-design-img{
+    background-image: url("icons/Garden\ Design.svg");
+}
+
+.plant-growing-img{
+    background-image: url("icons/Plant\ Growing.svg");
+}
+
+.flower-scaping-img{
+    background-image: url("icons/Flower\ Scaping.svg");
+}
+
+.branch-cutting-img{
+    background-image: url("icons/Branch\ Cutting.svg");
+}
+
+.weeds-control-img{
+    background-image: url("icons/Pests\,\ Weed\ Control.svg");
+}
+
+.watering-img{
+    background-image: url("icons/Watering\ &\ Irrigation.svg");
+}
