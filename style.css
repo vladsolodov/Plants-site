@@ -21,34 +21,81 @@ header .top-header .nav .item-contacts a {
   align-items: center;
   gap: 10px;
 }
+header .top-header .nav .item-contacts > a > span {
+  display: none;
+}
+@media (min-width: 1024px) {
+  header .top-header .nav .item-contacts > a > span {
+    display: contents;
+  }
+}
 header .top-header .nav .select-language a {
   text-decoration: none;
   color: white;
 }
-header .nav-2 {
+header .bottom-header {
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15);
+}
+header .bottom-header .nav-2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #FFFFFF;
   height: 70px;
 }
-header .nav-2 .nav-2-buttons {
+header .bottom-header .nav-2 .nav-2-menu-and-nav-2-buttons-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+@media (min-width: 1600px) {
+  header .bottom-header .nav-2 .nav-2-menu-and-nav-2-buttons-block {
+    gap: 100px;
+  }
+}
+header .bottom-header .nav-2 .nav-2-menu {
+  display: none;
+}
+@media (min-width: 1024px) {
+  header .bottom-header .nav-2 .nav-2-menu {
+    display: flex;
+    gap: 44px;
+    justify-content: space-between;
+  }
+  header .bottom-header .nav-2 .nav-2-menu a {
+    display: block;
+    text-decoration: none;
+    color: #212529;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+header .bottom-header .nav-2 .nav-2-buttons {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 40px;
 }
-
-@media (max-width: 996px) {
-  .item-contacts > a > span {
-    display: none;
-  }
+header .bottom-header .nav-2 .nav-2-buttons .call-button-pc-img {
+  display: none;
 }
 @media (min-width: 1024px) {
-  .item-contacts > a > span {
-    display: contents;
+  header .bottom-header .nav-2 .nav-2-buttons {
+    gap: 0px;
+  }
+  header .bottom-header .nav-2 .nav-2-buttons .call-button-mob-img {
+    display: none;
+  }
+  header .bottom-header .nav-2 .nav-2-buttons .menu-icon-mobile {
+    display: none;
+  }
+  header .bottom-header .nav-2 .nav-2-buttons .call-button-pc-img {
+    display: block;
   }
 }
+
 * {
   box-sizing: border-box;
 }
@@ -77,10 +124,16 @@ body {
 }
 
 .services-description {
-  text-align: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.services-description p {
+  text-align: center;
 }
 
 .service-item {
@@ -162,6 +215,7 @@ body {
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 50px;
+    width: 850px;
   }
   .tree-planting-item {
     background-color: #00730C;
@@ -205,5 +259,8 @@ body {
   .service-item {
     height: 366px;
     width: calc(25% - 23px);
+  }
+  .services-description {
+    width: 1136px;
   }
 }/*# sourceMappingURL=style.css.map */

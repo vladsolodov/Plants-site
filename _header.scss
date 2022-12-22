@@ -21,7 +21,16 @@ header{
                     align-items: center;
                     gap: 10px;
                       }
-                    
+
+                    .item-contacts > a > span{
+                        display: none;
+                    }
+
+                    @media (min-width: 1024px) { 
+                        .item-contacts > a > span{
+                            display: contents;
+                        }
+                    }
                     .select-language a {
                     text-decoration: none;
                     color: white;
@@ -30,35 +39,78 @@ header{
                    
         }
     }
-        .bottom-header{
-            $main-bg-color: #FFFFFF;
-  
+
+.bottom-header{
+    $main-bg-color: #FFFFFF;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15);
         
-        }
-        .nav-2{
+    .nav-2 {
         display: flex;
         align-items: center;
         justify-content: space-between;
         background-color: $main-bg-color;
         height: 70px;
-            .nav-2-buttons{
+        
+            .nav-2-menu-and-nav-2-buttons-block{
                 display: flex;
-                justify-content: space-between;
                 align-items: center;
-                gap: 40px;
+                justify-content: space-between;
+                gap: 50px;
             }
+            @media (min-width: 1600px) {
+                .nav-2-menu-and-nav-2-buttons-block{
+                    gap: 100px;
+                }
+            }
+                .nav-2-menu{
+                    display: none;
+                }
+                @media (min-width: 1024px){
+                .nav-2-menu{
+                        display: flex;
+                        gap: 44px;
+                        justify-content: space-between;
+                            a  {
+                                display: block;
+                                text-decoration: none;
+                                color: $typography-heading-color;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 20px;
+                            }
+                        }
+                    }
+                .nav-2-buttons{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 40px;
+                        .call-button-pc-img{
+                            display: none;
+                        }
+                    } 
+                    @media (min-width: 1024px){
+                        .nav-2-buttons{
+                            gap: 0px;
+                            .call-button-mob-img{
+                                display: none;
+                            }
+                            .menu-icon-mobile{
+                                display: none;
+                            }
+                            .call-button-pc-img{
+                                display: block;
+                        }
+                        }
+                    }
+            }  
+            
         }
-}
-
-
-@media (max-width: 996px){
-    .item-contacts > a > span{
-        display: none;
     }
-}
 
-@media (min-width: 1024px) { 
-    .item-contacts > a > span{
-        display: contents;
-    }
-}
+
+
+
+            
+        
+
