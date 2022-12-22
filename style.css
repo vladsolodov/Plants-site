@@ -49,43 +49,6 @@ header .nav-2 .nav-2-buttons {
     display: contents;
   }
 }
-.grass-cutting-img {
-  background-image: url("icons/Grass Cuttin.svg");
-}
-
-.tree-planting-img {
-  background-image: url("icons/Tree Planting green.svg");
-}
-
-@media (min-width: 1024px) {
-  .tree-planting-img {
-    background-image: url("icons/Tree Planting white.svg");
-  }
-}
-.garden-design-img {
-  background-image: url("icons/Garden Design.svg");
-}
-
-.plant-growing-img {
-  background-image: url("icons/Plant Growing.svg");
-}
-
-.flower-scaping-img {
-  background-image: url("icons/Flower Scaping.svg");
-}
-
-.branch-cutting-img {
-  background-image: url("icons/Branch Cutting.svg");
-}
-
-.weeds-control-img {
-  background-image: url("icons/Pests, Weed Control.svg");
-}
-
-.watering-img {
-  background-image: url("icons/Watering & Irrigation.svg");
-}
-
 * {
   box-sizing: border-box;
 }
@@ -126,11 +89,12 @@ body {
   background-color: linear-gradient(172.29deg, #FFFFFF -10.79%, #FFFFFF 94.04%);
 }
 
-.services-img {
-  background-size: contain;
-  background-repeat: no-repeat;
+.service-item img {
   width: 50px;
-  height: 50px;
+}
+
+.tree-planting-item .pc-image {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -192,7 +156,13 @@ body {
     font-size: 16px;
     line-height: 20px;
   }
-  .services-img {
+  .tree-planting-item .pc-image {
+    display: block;
+  }
+  .tree-planting-item .mobile-image {
+    display: none;
+  }
+  .service-item img {
     width: 70px;
     height: 70px;
     margin-bottom: 50px;
